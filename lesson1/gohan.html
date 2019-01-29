@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gohan.html</title>
+<link href="gohan01.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script>
+	$(function(){
+	$(".topslide").carouFredSel();
+	});
+	</script>
+	<script>
+	$(function(){
+	$(".inner").carouFredSel({
+		fx:"scroll",
+		duration:"8000",
+		easing:"linear",
+		auto{
+		timeoutDuretion:"0",
+	pause on Hover:"0"
+	}
+	});
+	});
+	</script>
+</head>
+
+<body onLoad="MM_preloadImages('img/btn-home_on.png','img/btn-menu_on.png','img/btn-rice_on.png','img/btn-arrange_on.png','img/btn-side_on.png','img/btn-contact_on.png')">
+  <div id="all">
+    <header>
+      <div class="inner">
+        <h1><img src="img/logo.png" width="420" height="109" alt="お食事処　白米の店　こめつぶ"/></h1>
+      <div class="text">
+        <p>〒164-8787 東京都中野区東中野4-2-3<br>
+          専門学校東京テクニカルカレッジ テラハウスICA<br>
+          TEL:03-××××-××××<br>
+        職業訓練授業課題</p>
+      </div>
+		</div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#all"><img src="img/btn-home.png" alt="home" width="50" height="52" id="btn00" onMouseOver="MM_swapImage('btn00','','img/btn-home_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+        <li><a href="#menu"><img src="img/btn-menu.png" alt="menu" width="180" height="52" id="btn01" onMouseOver="MM_swapImage('btn01','','img/btn-menu_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+        <li><a href="#rice"><img src="img/btn-rice.png" alt="rice" width="180" height="52" id="btn02" onMouseOver="MM_swapImage('btn02','','img/btn-rice_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+        <li><a href="#arrange"><img src="img/btn-arrange.png" alt="arrange menu" width="180" height="52" id="btn03" onMouseOver="MM_swapImage('btn03','','img/btn-arrange_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+        <li><a href="#side"><img src="img/btn-side.png" alt="side menu" width="180" height="52" id="btn04" onMouseOver="MM_swapImage('btn04','','img/btn-side_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+        <li><a href="#contact"><img src="img/btn-contact.png" alt="contact" width="180" height="52" id="btn05" onMouseOver="MM_swapImage('btn05','','img/btn-contact_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="topslide">
+        <p><img src="img/mainimage.jpg" width="1000" height="450" alt="美味しいお米を食べよう"/></p>
+        <p><img src="img-2/main4.jpg" width="1000" height="450" alt=""/></p>
+        <p><img src="img-2/main5.jpg" width="1000" height="450" alt=""/></p>
+      </div>
+      <p>&nbsp;</p>
+      <section class="menu" id="menu">
+        <h2><img src="img/title-menu.png" width="274" height="66" alt="menu"/></h2>
+        <div class="box">
+          <h3>白米　￥300</h3>
+          <p><img src="img/menu-photo01.jpg" width="280" height="230" alt="白米　￥300"/></p>
+          <p>サイドメニューからお好みのお惣菜を<br>
+          お選びいただけます。プラス￥120より</p>
+        </div>
+        <div class="box">
+          <h3>白米+紀州梅　￥400</h3>
+          <p><img src="img/menu-photo02.jpg" width="280" height="230" alt="白米+紀州梅　￥400"/></p>
+          <p>サイドメニューからお好みのお惣菜を<br>
+          お選びいただけます。プラス￥120より</p>
+        </div>
+        <div class="box">
+          <h3>白米+たまご　￥400</h3>
+          <p><img src="img/menu-photo03.jpg" width="280" height="230" alt="白米+たまご　￥400"/></p>
+          <p>サイドメニューからお好みのお惣菜を<br>
+          お選びいただけます。プラス￥120より</p>
+        </div>
+      </section>
+      <section class="rice" id="rice">
+          <h2><img src="img/title-rice.png" width="239" height="66" alt="rice"/></h2>
+		<div class="inner">
+          <p class="photo"><img src="img/rice-photo01.jpg" width="240" height="350" alt=""/></p>
+          <div class="text">
+            <h3>米づくりは「苗半作」</h3>
+            <p>苗の出来でその年の作柄の半分は決まってしまう、という意味です。がっちりした丈夫な苗なら<br>
+              ば、田んぼに根をどんどん張りどっしりと成長していきます。それが貧弱な苗ですと、寒さや風<br>
+              に弱く害虫にもやられやすいのです。<br>
+              丈夫な苗の作り方は、水をあげすぎないこと、そして風をあてるタイミングです。<br>
+            少し厳しい条件で育てるほうが、田んぼに植えてからもたくましく成長してくれます。</p>
+            <h3>美味しさへのこだわり</h3>
+            <p>収穫は、稲穂がよく熟すのを待って刈り取りをします。こうすることで米の味、歯ざわりがよく<br>
+              なります。乾燥は、新鮮な風味を損なわないように、自然に近い通風乾燥でゆっくりと時間をか<br>
+            けて行います。お米は低温で貯蔵し、発送直前に精米いたします。</p>
+            <p class="btn"><a href="#"><img src="img/btn-ricehp.png" width="320" height="40" alt="契約農家さんのホームページはコチラから"/></a></p>
+          </div>
+        </div>
+      </section>
+      <section class="arrange" id="arrange">
+        <h2><img src="img/title-arrange.png" width="458" height="66" alt="arrange menu"/></h2>
+        <div class="inner">
+          <p><img src="img/arrange-photo01.jpg" width="280" height="230" alt="きのこの炊き込みご飯"/></p>
+          <p><img src="img/arrange-photo02.jpg" width="280" height="230" alt="シャケの混ぜご飯"/></p>
+          <p><img src="img/arrange-photo03.jpg" width="280" height="230" alt="たこ飯"/></p>
+          <p><img src="img/arrange-photo04.jpg" width="280" height="230" alt="マグロ漬け丼"/></p>
+          <p><img src="img/arrange-photo05.jpg" width="280" height="230" alt="サーモンの漬け丼"/></p>
+          <p><img src="img/arrange-photo06.jpg" width="280" height="230" alt="自家製カレー"/></p>
+        </div>
+      </section>
+      <section class="side" id="side">
+        <h2><img src="img/title-side.png" width="378" height="66" alt="side menu"/></h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>海苔</th>
+              <td>テキストテキストテキストテキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>佃煮</th>
+              <td>テキストテキストテキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>梅干し</th>
+              <td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>テキスト</th>
+              <td>テキストテキストテキストテキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>テキスト</th>
+              <td>テキストテキストテキストテキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>テキスト</th>
+              <td>テキストテキストテキストテキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>テキスト</th>
+              <td>テキストテキストテキストテキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>テキスト</th>
+              <td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>&nbsp;</p>
+      </section>
+      <section class="contact" id="contact">
+        <h2><img src="img/title-contact.png" width="325" height="66" alt="contact"/></h2>
+        <p>〒164-8787 東京都中野区東中野4-2-3<br>
+          専門学校東京テクニカルカレッジ テラハウスICA<br>
+        TEL:03-××××-××××</p>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.8124173627243!2d139.68162151477176!3d35.706233436208684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f2c83ab1885b%3A0xe192669bb7699073!2z5p2x5Lit6YeO6aeF!5e0!3m2!1sja!2sjp!4v1541865683680" width="900" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </section>
+    <p class="pagetop"><a href="#all"><img src="img/btn-pagetop.png" width="159" height="60" alt="page top"/></a></p>
+    </main>
+    <footer>
+      <p><a href="#all"><img src="img/foot-logo.png" width="265" height="69" alt="お食事処　白米の店　こめつぶ"/></a></p>
+      <p><a href="#all">home</a>|<a href="#menu">menu</a>|<a href="#rice">rice</a>|<a href="#arrange">arrange menu</a>|<a href="#side">side menu</a>|<a href="#contact">contact</a></p>
+      <p>Copyright © 職業訓練授業課題.All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

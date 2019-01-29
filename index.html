@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<style type="text/css">
+h1, h2, p, ul, li, body {
+	padding: 0;
+	margin: 0;
+}
+img {
+	vertical-align: bottom;
+	border-style: none;
+}
+#top {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+nav {
+	height: 100px;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	float: none;
+}
+nav li {
+	display: table;
+	float: left;
+	margin-left: 40px;
+	font-size: 24px;
+	margin-top: 30px;
+	/* [disabled]margin-right: 8px; */
+	margin-left: 15px;
+	margin-bottom: 0;
+	display: inline-block;
+	/* [disabled]margin-top: 30px; */
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 0;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 4px;
+	list-style: none;
+	text-align: center;
+}
+	/**/
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+a::after {
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 2px;
+  background: #;
+	transform: scale(0, 1);
+	transform-origin: center top;
+	transition: transform .3s;
+	background-color: #6E786D;
+}
+a:hover::after {
+  transform: scale(1, 1);
+}
+
+	/**/
+table {
+	margin: 50px auto;
+	text-align: center;
+	width: 100%;
+	border-collapse: collapse;
+	border-style: none;
+}
+th ,   td {
+	width: 50%;
+	vertical-align: top;
+	text-align: center;
+     border:none;
+}
+
+th {
+	vertical-align: top;
+}
+.fadein{
+	margin-top: 30px;
+	opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 300ms;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+figure {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+figure img {
+  -webkit-transform: scale(1)
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+figure:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}	
+footer  {
+	height: 200px;
+}
+.gotop  {
+	margin: 100px auto;
+	text-align: center;
+}
+</style>
+	
+</head>
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="jquery.smoothscroll.js"></script>
+	
+	<script>$(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 200){
+                $(this).addClass('scrollin');
+            }
+        });
+    });
+});</script>
+<body>
+<header>
+  <h1><img src="img/main.png" alt="portofolio makiko" width="1200" height="650" id="top"/></h1>
+</header>
+<main>
+  <ul>
+    <nav>
+      <li><a href="#lesson01"><img src="img/navlesson01.png" width="156" height="31" alt="lesson01"/></a></li>
+      <li><a href="#lesson02"><img src="img/navlesson02.png" width="159" height="31" alt="lesson02"/></a></li>
+      <li><a href="#lesson03"><img src="img/navlesson03.png" width="159" height="31" alt="lesson03"/></a></li>
+    </nav>
+  </ul>
+  <section class="lesson01">
+    <table width="200" border="1">
+      <tbody>
+        <tr>
+          <th scope="row"><div class="text">
+            <h2><a href="lesson1/gohan.html"><img src="img/one.png" alt="lesson01" width="245" height="50" class="fadein" id="lesson01"/></a></h2>
+            <p><a href="lesson1/gohan.html"><img src="img/Dreamweaver.png" alt="" width="378" height="36" class="fadein"/></a></p>
+          </div></th>
+          <td><p><figure><a href="lesson1/gohan.html"><img src="img/lesson01img.png" alt="" width="602" height="352" class="figure"/></a></figure></p></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="lesson2">
+    <table width="200" border="1">
+      <tbody>
+        <tr>
+          <th scope="row"><figure><a href="lesson2/lesson2.html"><img src="img/lesson02img.png" width="602" height="351" alt=""/></a></figure></th>
+			<td><div class="text">
+			  <h2><a href="lesson2/lesson2.html"><img src="img/two.png" alt="" width="250" height="50" class="fadein" id="lesson02"/></a></h2>
+			  <p><a href="lesson2/lesson2.html"><img src="img/Dreamweaver.png" alt="" width="378" height="36" class="fadein"/></a></p>
+			  </div>
+		   </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="lesson3">
+    <table width="200" border="1">
+      <tbody>
+        <tr>
+          <th scope="row"><div class="text">
+            <h2><a href="lesson3/index2のコピー.html"><img src="img/three.png" alt="" width="250" height="50" class="fadein" id="lesson03"/></a></h2>
+            <p><a href="lesson3/index2のコピー.html"><img src="img/Dreamweaver.png" alt="" width="378" height="36" class="fadein"/></a></p>
+            <p><a href="lesson3/index2のコピー.html"><img src="img/responsive.png" alt="" width="298" height="44" class="fadein"/></a></p>
+          </div></th>
+          <td><figure><a href="lesson3/index2のコピー.html"><img src="img/lesson03img.png" width="601" height="351" alt=""/></a></figure></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+<footer>
+  <p class="gotop"><a href="#top"><img src="img/TOP.png" width="119" height="45" alt=""/></a></p>
+</footer>
+</body>
+</html>

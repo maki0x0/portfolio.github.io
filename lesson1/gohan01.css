@@ -1,0 +1,175 @@
+@charset "UTF-8";
+p, h1, h2, h3, ul, body {
+	margin: 0px;
+	padding: 0px;
+}
+img {
+	border: none;
+	vertical-align: bottom;
+}
+#all {
+	font-size: 95%;
+	line-height: 1.5;
+	width: 100%;
+}
+header {
+	background-color: #D1C0A5;
+}
+header .inner {
+	margin: 0 auto;
+	padding: 10px 0 10px 5px;
+	width: 995px;
+	overflow: hidden;
+}
+header .text {
+	float: right;
+	padding: 1em;
+	/* [disabled]overflow: hidden; */
+	/* [disabled]clear: both; */
+}
+header h1 {
+	float: left;
+}
+nav {
+	background-image: url(img/bg-nav.jpg);
+	background-repeat: repeat-x;
+	height: 65px;
+}
+nav ul {
+	margin: 0 auto;
+	width: 1000px;
+	padding-top: 8px;
+	list-style-type: none;
+	overflow: hidden;
+}
+nav li {
+	float: left;
+	margin-right: 10px;
+}
+nav li, last{
+	margin-right: 0px;
+}
+main {
+	display: block;
+	margin: 0 auto;
+	width: 1000px;
+	padding-top: 20px;
+}
+main h2 {
+	padding-top: 30px;
+	margin-left: -9px;
+	clear: both;
+}
+main section {
+	clear: both;
+}
+.menu .box {
+	background-image: url(img/bg-waku02.jpg);
+	background-repeat: repeat-y;
+	text-align: center;
+	margin: 5px 50px 12px 0;
+	width: 300px;
+	float: left;
+}
+.menu .box:nth-of-type(3n) {
+	margin: 0px;
+}
+.menu .box h3 {
+	background-image: url(img/bg-waku01.jpg);
+	background-repeat: no-repeat;
+	text-align: left;
+	padding: 30px 15px 0;
+	height: 47px;
+}
+.menu .box .text {
+	padding: 10px 15px 5px;
+	text-align: left;
+}
+.menu .box:after {
+	font-size: 0px;
+	display: block;
+	content: url(img/bg-waku03.jpg);
+}
+.rice .inner {
+	margin: 14px 50px;
+	padding: 10px;
+	border: 1px solid  #fff;
+	background-color: #CCE198;
+	-webkit-box-shadow: 10px 10px 2px 0px #ccc;
+	box-shadow: 10px 10px 2px 0px #ccc;
+	position: relative;
+	overflow: hidden;
+}
+.rice .inner .photo {
+	float: left;
+}
+.rice .inner .text {
+	margin: 0 0 100px 260px;
+}
+.rice .inner .text p {
+	padding-bottom: 10px;
+}
+.rice .inner .btn {
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+}
+main .rice .inner {
+}
+.arrange .inner {
+	margin: 23px 0 14px;
+	padding: 50px;
+	background-color: #FBEDD7;
+	overflow: hidden;
+}
+.arrange .inner p {
+	padding: 10px;
+	float: left;
+}
+.slde table {
+	border-collapse: collapse;
+	margin: 24px auto 14px;
+	width: 900px;
+}
+.slide th, .slide td {
+	padding: 10px;
+	color: #6a3906;
+}
+.slide th {
+	border: 2px solid #3d0c0c;
+	font-weight: normal;
+	text-align: left;
+	white-space: nowrap;
+}
+.side tr:nth-child(odd) {
+	background-color: #d1c0a5;
+}
+.side tr:nth-child(even)  {
+	background-color: #fcd9a0;
+}
+.contact p {
+	padding: 24px 55px;
+}
+.contact .map {
+	margin: 0 auto;
+	width: 900px;
+}
+.pagetop {
+	text-align: right;
+	top: 60px;
+}
+footer {
+	background-color: #D1C0A5;
+	padding: 10px 0 100px;
+	text-align: center;
+	color: undefined;
+}
+footer .logo {
+	padding-bottom: 10px;
+}
+footer a {
+	color: #000000;
+}
+footer a:hover {
+	color: #844e45;
+}

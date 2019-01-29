@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Responsive</title>
+<style type="text/css">
+body, h1, h2, h3, ul, p {
+	padding: 0;
+	margin: 0;
+}
+img {
+	vertical-align: bottom;
+	border-style: none;
+}
+body {
+}
+.inner {
+	margin: 0 auto;
+	width: 1000px;
+}
+header {
+	background-color: #FFFF00;
+	border-top: 10px solid #EC008C;
+}
+header .inner {
+	position: relative;
+}
+header h1 {
+	position: absolute;
+	top: -10px;
+	left: 40px;
+}
+.header-nav {
+	margin-left: 190px;
+}
+.header-nav li {
+	display: table;
+	float: left;
+}
+.header-nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+.header-nav a {
+	display: table-cell;
+	padding: 0 10px;
+	height: 65px;
+	vertical-align: middle;
+}
+.mainimage {
+	width: 100%;
+}
+.mainimage img {
+	width: 100%;
+	height: auto;
+}
+main {
+	display: block;
+}
+main  h2 {
+	margin: 40px 0;
+	background-color: #FFEED7;
+	border-bottom: 5px solid #EC008C;
+}
+section {
+	clear: both;
+}
+.box {
+	width: 480px;
+	margin-bottom: 40px;
+	float: left;
+}
+.box h3 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.box:nth-of-type(even) {
+	float: right;
+}
+#sec3 .photo {
+	margin-right: 40px;
+	float: left;
+}
+.box p {
+	margin-bottom: 10px;
+	line-height: 1.8;
+}
+#sec3 p {
+	margin-bottom: 10px;
+	line-height: 1.8;
+}
+table {
+	margin: 0 auto 10px;
+	width: 900px;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 15px;
+	vertical-align: top;
+	border: 2px solid #FFFFFF;
+	line-height: 1.8;
+}
+.inner #sec4 table {
+}
+tr:nth-child(odd) {
+	background-color: #7ACCC8;
+}
+tr:nth-child(even) {
+	background-color: #8DC63F;
+}
+#sec4 p {
+	margin: 0 auto;
+	width: 900px;
+}
+.gotop {
+	text-align: right;
+	margin-top: 40px;
+}
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+footer {
+	padding: 20px 0 30px;
+	background-color: #EC008C;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 1.5;
+}
+footer .link {
+	margin-bottom: 200px;
+}
+footer a:hover {
+	color: #BDEAFD;
+}
+.mainimage-s {
+	display: none;
+}
+#nav-toggle {
+	display: none;
+	width: 30px;
+	height: 26px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+}
+#nav-toggle span {
+	width: 100%;
+	height: 4px;
+	display: block;
+	position: absolute;
+	background-color: #333333;
+	transition: 0.3s;
+	left: 0px;
+}
+#nav-toggle span:nth-child(1) {
+	top: 0px;
+}
+#nav-toggle span:nth-child(2) {
+	top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+	top: 22px;
+}
+
+@media screen and (max-width:960px){
+img {
+	max-width: 100%;
+	height: auto;
+}
+.inner {
+	width: 100%;
+}
+.box {
+	width: 48%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+#sec3 .photo {
+	width: 48%;
+	margin-right: 2%;
+}
+#sec3 p {
+	margin: 1%;
+}
+table, #sec4 p {
+	width: 90%;
+}
+}
+
+@media screen and (max-width:640px){
+header h1 {
+	width: 20%;
+}
+.header-nav {
+	margin-left: 0px;
+	padding-top: 50px;
+}
+.header-nav li {
+	width: 100%;
+	float: none;
+}
+.header-nav a {
+	text-align: center;
+}
+.header-nav a:hover {
+	background-color: #ec008c;
+}
+.box {
+	margin: 0 auto 40px;
+	width: 75%;
+	float: none;
+}
+.box:nth-of-type(even) {
+	float: none;
+}
+#sec3 .photo {
+	margin: 0 auto 30px;
+	width: 75%;
+	float: none;
+}
+table, #sec4 p {
+	width: 75%;
+}
+#sec3 p {
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
+}
+th, td {
+	display: block;
+}
+.gotop {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer .link {
+	margin: 0 auto 40px;
+	width: 75%;
+}
+.mainimage-s {
+	display: block;
+}
+.mainimage {
+	display: none;
+}
+#nav-toggle {
+	display: block;
+}
+.header-nav ul {
+	display: none;
+}
+#nav-toggle.active span:nth-child(1) {
+	transform: rotate(315deg);
+	top: 11px;
+}
+#nav-toggle.actve span:nth-child(2) {
+	width: 0;
+	left: 50%;
+}
+#nav-toggle.active span:nth-child(3)  {
+	top: 11px;
+	transform: rotate(-315deg);
+}
+}
+
+@media screen and (min-width:641px){
+	.header-nav ul {
+	display: block !important
+!important;
+	display: block !important;
+}
+}
+</style>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+
+<script>
+	$(function(){
+	$("#nav-toggle").on("click",function(){
+	$(this).next().slideToggle();
+	$(this).toggleClass("active");
+	});
+	});
+	</script>
+</head>
+
+<body id="top">
+<header>
+  <div class="inner">
+     <h1><a href="Untitled-1.html"><img src="img/logo.png" width="126" height="166" alt="くらげ"/></a></h1>
+      <nav class="header-nav">
+		  <div id="nav-toggle">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  </div>
+        <ul>
+          <li><a href="#top"><img src="img/btn-top.png" width="51" height="25" alt="TOP"/></a></li>
+          <li><a href="#sec1"><img src="img/btn-jellyfish1.png" width="66" height="29" alt=""/></a></li>
+          <li><a href="#sec2"><img src="img/btn-jellyfish2.png" width="184" height="29" alt=""/></a></li>
+          <li><a href="#sec3"><img src="img/btn-jellyfish3.png" width="184" height="29" alt=""/></a></li>
+          <li><a href="#sec4"><img src="img/btn-jellyfish4.png" width="164" height="29" alt=""/></a></li>
+        </ul>
+      </nav>
+    </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</header>
+
+<p class="mainimage"><img src="img/main.jpg" width="1600" height="350" alt=""/></p>
+<p class="mainimage-s"><img src="img/bg-jellyfish.jpg" alt=""/></p>
+<main class="inner">
+  <section id="sec1">
+    <h2><img src="img/title-jellyfish1.png" width="149" height="51" alt=""/></h2>
+    <div class="box">
+      <p><img src="img/photo-mizu.jpg" width="480" height="190" alt=""/></p>
+      <h3>ミズクラゲ</h3>
+      <p>世界中の海に分布しています。<br>
+      傘の直径は15～30cmで、別名をヨツメクラゲとも言います。</p>
+    </div>
+    <div class="box">
+      <p><img src="img/photo-tako.png" width="480" height="190" alt=""/></p>
+      <h3>タコクラゲ</h3>
+      <p>関東以南に分布しています。<br>
+      傘の直径は10～20cmで、傘に水玉模様があるのが特徴です。</p>
+    </div>
+    <div class="box">
+      <p><img src="img/photo-aka.png" width="480" height="190" alt=""/></p>
+      <h3>アカクラゲ</h3>
+      <p>北海道以南に生息している種類です。<br>
+      傘の直径は約20cmで、傘に放射状の赤い縞模様が入っているのが特徴です。</p>
+    </div>
+    <div class="box">
+      <p><img src="img/photo-oki.png" width="480" height="190" alt=""/></p>
+      <h3>オキクラゲ</h3>
+      <p>黒潮海流域二生息しています。<br>
+      傘の直径は5～7cmで、日本には黒潮に乗ってやってきます</p>
+    </div>
+  </section>
+  <section id="sec2">
+    <h2><img src="img/title-jellyfish2.png" width="268" height="50" alt=""/></h2>
+    <div class="box">
+      <p><img src="img/photo-sumida.png" width="480" height="190" alt=""/></p>
+      <h3>くらげ万華鏡トンネル</h3>
+      <p>全長50メートルのスロープに、色鮮やかな照明に照らされた8つのクラゲ水槽を設置し、壁と天井の3面に約5,000枚の四角形や三角形の鏡を敷き詰めることで、まるでクラゲと一緒に鏡の中の世界を漂っているような浮遊体験ができる。<br>
+      すみだ水族館　<a href="#">http://www.sumida-aquarium.com/</a></p>
+    </div>
+    <div class="box">
+      <p><img src="img/photo-kamogawa.jpg" width="480" height="190" alt=""/></p>
+      <h3>くらげライフ</h3>
+      <p>約10種類のクラゲの展示により、クラゲの魅力あふれる生態や多様性を紹介すると共に、最新のデジタル映像技術でクラゲの不思議な生活史を再現するコーナーを開設し、より楽しく、わかりやすく学ぶことができる参加体験型の展示施設。<br>
+      鴨川シーワールド　<a href="#">http://www.kamogawa-seaworld.jp/</a></p>
+    </div>
+  </section>
+  <section id="sec3">
+    <h2><img src="img/title-jellyfish3.png" width="268" height="50" alt=""/></h2>
+    <p class="photo"><img src="img/photo-shiiku.jpg" alt="" width="480" height="190"/></p>
+    <p>クラゲは魚のように泳ぐ能力があまりなく、潮の流れに乗って移動しています。そのため流れのない水槽に入れてしまうと傘の開閉で動ける範囲に限られて底の方から動けなくなってしまいます。そこで丸い形をしたクラゲ専用の水槽が販売されるようになり、ろ過装置の水流によって自然な流れを実現しました。ただし、専用水槽はかなり高額なためこれからクラゲ飼育を始める方にとっては少しハードルが高いでしょう。</p>
+    <p>そういった際には水槽の奥行きとマッチする薄いアクリル板を円を描くように曲げて水槽に設置してみましょう。<br>
+      外部フィルターが作る水流をうまく利用すればクラゲに最適な水流を作ることができますし、アクリル板の外側にヒーターやフィルターの吸い込みがくるようにするとクラゲが傷つく心配はありません。<br>
+      餌に関しては行き餌を好む傾向にあるためブラインシュリンプを沸かしてスポイトでクラゲの傘に吹きかけてあげるように与えます。<br>
+    クラゲは水質悪化にも極端に敏感なため最低でも3日に一度は3分の1ほどの水量を換水するようにしてください。</p>
+  </section>
+  <section id="sec4">
+    <h2><img src="img/title-jellyfish4.png" width="248" height="50" alt=""/></h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>エチゼンクラゲ</td>
+          <td>傘が2メートルにもなく大型で、名前の由来になっている「越前」の福井県だけではなく、日本海沿岸全域で収穫されます。</td>
+        </tr>
+        <tr>
+          <td>ビゼンクラゲ</td>
+          <td>傘が50センチ～1メートルほどで、やはりその名の通り「備前」岡山県が名産地 です。<br>
+          エチゼンクラゲよりも品質が高いと評価されています。</td>
+        </tr>
+        <tr>
+          <td>ミズクラゲ</td>
+          <td>弱い毒性があり食べてはいけません。</td>
+        </tr>
+        <tr>
+          <td>タコクラゲ</td>
+          <td>弱い毒性があり食べてはいけません。</td>
+        </tr>
+        <tr>
+          <td>アカクラゲ</td>
+          <td>強い毒性があり食べてはいけません。触る事も危険です。</td>
+        </tr>
+        <tr>
+          <td>オキクラゲ</td>
+          <td>強い毒性があり食べてはいけません。触る事も危険です。</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>主に、上記２種類（エチゼンクラゲ・ビゼンクラゲ）が代表的な食用クラゲです。<br>
+    乾燥させた食材が、一般に中華風和えものなどに使われています。</p>
+  </section>
+  <p class="gotop"><a href="#top"><img src="img/gotop.png" alt="ページtopへ" width="90" height="105"/></a></p>
+</main>
+<footer>
+ <p class="link">｜ <a href="#top">TOP </a>｜<a href="#sec1"> くらげ</a> ｜<a href="#sec2"> くらげを見に行こう</a> ｜<a href="#sec3"> くらげを飼育しよう </a>｜ <a href="#sec4">くらげを食べよう </a>｜</p>
+  <p>Copyright &copy; 職業訓練Lesson All Rights Reserved.</p>
+</footer>
+</body>
+</html>

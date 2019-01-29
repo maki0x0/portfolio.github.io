@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body, p, h1, ul, li {
+	padding: 0;
+	position: 0;
+}
+img {
+	vertical-align: bottom;
+	border-style: none;
+}
+.all {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:contain;
+	background:url(img/frame.png) no-repeat center center;
+	background-size: cover;
+;/* [disabled]margin-top: 30px; */
+	/* [disabled]margin-bottom: 30px; */
+}
+
+
+h1 {
+	text-align: center;
+	margin-top: 70px;
+}
+.sabnav {
+}
